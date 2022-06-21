@@ -200,16 +200,23 @@ word_output = dbc.Row(
 message_input = dbc.Row(
                 [
                     dbc.Col(
-                        dcc.Textarea(
-                            id='message_input1',
-                            value = "",
-                            placeholder="Deine Nachricht",
-                            maxLength =500,
-                            #size =60,
-                            #type='text',
-
-                            className='form-control',
-                            rows=5
+                        dbc.Accordion(
+                            [
+                                dbc.AccordionItem(
+                                    dcc.Textarea(
+                                        id='message_input1',
+                                        value = "",
+                                        placeholder="Deine Nachricht",
+                                        maxLength =500,
+                                        #size =60,
+                                        #type='text',
+                                        className='form-control',
+                                        rows=5
+                                    ),
+                                    title="Nachricht"
+                                ),
+                            ],
+                            start_collapsed=True,
                         ),
                         width=12),
                 ])
