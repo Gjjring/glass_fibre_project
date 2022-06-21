@@ -36,7 +36,7 @@ def navigation_bar():
                             label="Mehr",
                         ),
                     ],
-                    brand="Girls' Day",
+                    brand="Mintoring",
                     brand_href="#",
                     color="primary",
                     dark=True,
